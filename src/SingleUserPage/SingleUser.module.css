@@ -1,0 +1,29 @@
+.Main {
+    width: 100%;
+    min-height: calc(100vh - 250px);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    flex: 1 0 auto;
+}
+.LabelPostDiv {
+    margin-top: 30px;
+    width:70%;
+    border-bottom: solid 2px rgba(1, 1, 1, .2);
+    display: flex;
+}
+.LabelPostDiv label{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.UserPostList {
+    margin-top: 10px;
+    width:70%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+.NoPosts {
+    font-size: 18px;
+}

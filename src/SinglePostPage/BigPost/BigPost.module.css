@@ -1,0 +1,164 @@
+.Wrapper {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+}
+.BigPost {
+    display: flex;
+    flex-flow: row;
+    width: 70%;
+    max-width: 1000px;
+}
+
+.PostMark {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    margin-left: 20px;
+    padding: 10px 0px;
+}
+.Rating {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.Rating:hover {
+    cursor: default;
+}
+.MarkButton:hover {
+    cursor: pointer;
+}
+
+.PostMain {
+    padding: 20px 30px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 20px;
+}
+.PostTitle {
+    color: #1E81B0;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0px;
+}
+.PostTitle:hover {
+    text-decoration: underline;
+}
+.CategoriesAndUser {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    margin-top: 5px;
+    padding: 0px;
+}
+
+.Link {
+    margin-right: 5px;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+.Link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.PersonAvatar {
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.PostContent {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    display: flex;
+    flex-flow: column;
+}
+
+.PostDate {
+    font-size: 14px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    opacity: .6;
+    cursor: default;
+}
+.ButtonsDiv {
+    display: flex;
+    flex-flow: row wrap;
+    width: 70%;
+    max-width: 1000px;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+.Button {
+    margin-left: 10px;
+    border: none;
+    background: #1E81B0;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.1s;
+}
+
+.Button:hover,
+.Button:active {
+    background: #249cd4;
+}
+
+.Button:focus {
+    outline: none;
+}
+.ButtonDeletePost, .ButtonCancel {
+    background: #8a8a8a;
+}
+.ButtonCancel:hover {
+    background: #1E81B0;
+}
+.ButtonDeletePost:hover {
+    background: #f14343;
+}
+
+input {
+    height: 1.2rem;
+    margin: 0px;
+    margin-top: 20px;
+}
+
+.ContentInput, input { 
+    resize:vertical;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: solid 2px #1E81B0;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    font-family: -apple-system, BlinkMacSystemFont, "Poppins", 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+input:focus, .ContentInput:focus {
+    outline: none;
+}
+
+
+@media all and (max-width: 640px) {
+    .BigPost, .ButtonsDiv {
+        width: 94%;
+    }
+    .Button {
+        margin-top: 10px;
+    }
+  }

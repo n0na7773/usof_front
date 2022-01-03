@@ -1,0 +1,68 @@
+$main-color: #1e81b0;
+$hover-color: #249cd4;
+
+.Main {
+  width: 100%;
+  min-height: calc(100vh - 250px);
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  flex: 1 0 auto;
+}
+
+.CommentsDiv {
+  width: 70%;
+  max-width: 1000px;
+  display: flex;
+  flex-flow: column;
+  margin-top: 20px;
+}
+
+.LabelPostDiv {
+  font-size: 22px;
+  margin-top: 30px;
+}
+
+.NoComments {
+  font-size: 20px;
+  text-align: center;
+}
+
+.CreateButton {
+  border: none;
+  background: transparent;
+  border: solid 2px $main-color;
+  color: $main-color;
+  padding: 0.65rem 1.3rem;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  transition: 0.1s;
+  margin-left: 10px;
+
+  &:hover,
+  &:active {
+    background: $hover-color;
+    color: white;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+@media all and (max-width: 640px) {
+  .CommentsDiv {
+    width: 94%;
+  }
+}
+
+.MyNodeEnter {
+  opacity: 0;
+  transform: translateY(-50%);
+}
+.MyNodeEnterActive {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 400ms;
+}

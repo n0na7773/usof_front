@@ -1,0 +1,46 @@
+.UserEditDiv {
+    margin-top: 20px;
+}
+.UserEditDiv input {
+    border: none;
+    margin: 15px 20px;
+    border-bottom: 1px solid #C4C4C4;
+    padding: 7px 9px;
+    overflow: hidden;
+    background: transparent;
+    font-size: 14px;
+}
+.UserEditDiv input:focus{
+    outline: none;
+}
+.Label {
+    margin-left: 20px;
+    font-size: 16px;
+}
+.ButtonsDiv {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+.Button {
+    margin: 10px 10px 10px 0px;
+    border: none;
+    background: #1E81B0;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.1s;
+}
+
+.Button:hover,
+.Button:active {
+    background: #249cd4;
+}
+
+.Button:focus {
+    outline: none;
+}
+.ButtonCancel {
+    background: #8a8a8a;
+}

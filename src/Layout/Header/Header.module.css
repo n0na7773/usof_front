@@ -1,0 +1,63 @@
+.Header {
+    width: 100vw;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x:hidden
+}
+
+.logoImage {
+    width: 90px;
+    height: 50px;
+    margin-left: 20px;
+}
+
+.button {
+    margin: 10px 10px 10px 0px;
+    border: none;
+    background: #1E81B0;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    font-size: 1.15rem;
+    transition: 0.1s;
+}
+
+.button:hover,
+.button:active {
+    background: #249cd4;
+}
+
+.button:focus {
+    outline: none;
+}
+.RightBox {
+    padding: 0px;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+.UserLogin {
+    margin-right: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.UserLogin:hover {
+    text-decoration: underline;
+}
+.Avatar {
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+@media all and (max-width: 750px) {
+    .Header {
+        justify-content: center;
+    }
+  } 

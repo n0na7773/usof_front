@@ -1,0 +1,194 @@
+// @import "../../../../../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
+
+.Burger {
+    display: block;
+    margin: 5px 0px;
+    //margin-right: 5vw;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.BurgerMenuEnterActive {
+    // max-height: 0px;
+    animation: growDown 200ms ease-in-out forwards;
+    transform-origin: top center;
+
+    @keyframes growDown {
+        0% {
+            transform: scaleY(0)
+        }
+        100% {
+            transform: scaleY(1)
+        }
+    }
+}
+.BurgerMenuEnterDone {
+
+}
+.BurgerMenuExit {
+    animation: growUp 200ms ease-in-out forwards;
+    transform-origin: top center;
+
+    @keyframes growUp {
+        0% {
+            transform: scaleY(1)
+        }
+        100% {
+            transform: scaleY(0)
+        }
+    }
+}
+.BurgerMenuExitActive {
+
+}
+
+
+.BurgerMenu {
+    overflow: hidden;
+    position: absolute;
+    top: calc(4vw + 53px);
+    //left: 0;
+    width: 30%;
+    // height: 300px;
+    // background-color: white;
+    z-index: 10;
+
+    .Nav {
+        min-height: 100px;
+        padding: 0;
+        margin-left: 30px;
+        list-style: none;
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+
+        li {
+            font-weight: 400;
+            transition: all 0.2s ease;
+            padding-bottom: 3px;
+            display: flex;
+            flex-flow: column;
+            margin-top: 3px;
+        }
+
+        li:hover {
+            opacity: .4;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000000;
+            display: block;
+            font-size: 16px;
+        }
+
+        .Active a {
+            color: #DA174F;
+        }
+
+        .FuncSubMenuEnterActive {
+            animation: growDown 200ms ease-in-out forwards;
+            transform-origin: top center;
+        
+            @keyframes growDown {
+                0% {
+                    transform: scaleY(0)
+                }
+                100% {
+                    transform: scaleY(1)
+                }
+            }
+        }
+        .FuncSubMenuExit {
+            animation: growUp 200ms ease-in-out forwards;
+            transform-origin: top center;
+        
+            @keyframes growUp {
+                0% {
+                    transform: scaleY(1)
+                }
+                100% {
+                    transform: scaleY(0)
+                }
+            }
+        }
+    }
+
+}
+.ButtonsDiv {
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    
+    Button {
+        margin: 10px 10px 10px 0px;
+        cursor: pointer;
+        font-size: 17px;
+        transition: 0.1s;
+        border-radius: 6px;
+        background-clip: padding-box;
+        background-color: white ;
+        position: relative;
+        box-sizing: border-box;
+        color: #3D4F9F;
+    
+        &:focus {
+            outline: none;
+        }
+    }
+    
+    .SignIn {
+        padding: 0.5rem 2rem;
+        border: 2px solid #D2E1FF;
+    
+        &:hover,
+        &:active {
+            background: #D2E1FF;
+        }
+    }
+    .SignUp {
+        padding: 0.5rem 0.75rem;
+        border: 2px solid #D2E1FF;
+        background: #D2E1FF;
+    
+        &:hover,
+        &:active {
+            background: #b4cdff;
+        }
+    
+    }
+    .Logout {
+        padding: 0.5rem 1rem;
+        border: 2px solid #D2E1FF;
+        background: #D2E1FF;
+    
+        &:hover,
+        &:active {
+            background: #b4cdff;
+        }
+    }
+    .Profile {
+        padding: 0.5rem 1rem;
+        border: 2px solid #D2E1FF;
+    
+        &:hover,
+        &:active {
+            background: #D2E1FF;
+        }
+    }
+}
+
+
+
+
+// @media all and (max-width: 1100px) {
+//     .Burger {
+//         display: block;
+//     }
+// } 
+// @media all and (min-width: 1100px) {
+//     .BurgerMenu {
+//         display: none;
+//     }
+// } 

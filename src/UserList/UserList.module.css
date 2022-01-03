@@ -1,0 +1,16 @@
+.Main {
+    width: 100%;
+    min-height: calc(80vh - 250px);
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    flex: 1 0 auto;
+}
+.UserList {
+    margin-top: 10px;
+    width:100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}

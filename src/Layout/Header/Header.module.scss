@@ -1,0 +1,130 @@
+.Header {
+    width: 100vw;
+    margin-top: 4vw;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x:hidden;
+    background-color: #F3C32A;
+}
+.LeftBox {
+    margin-left: 4vw;
+    min-width: 5vw;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: left;
+
+
+    .Logo {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+    .LogoText {
+        font-family: "Copperplate";
+        font-size: 2.3em;
+        margin-left: 13px;
+        color: black;
+
+        &:hover {
+            color: black;
+            cursor: pointer;
+        }
+    }
+    
+    .Logo:active, .Logo:visited {
+        color: black;
+    }
+}
+.RightBox {
+    margin-right: 5vw;
+}
+.Button {
+    font-family: "Montserrat";
+    font-weight: 400;
+    margin: 10px 10px 10px 0px;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+    transition: 0.1s;
+    border-radius: 5px;
+    background-clip: padding-box;
+    // background-color: white ;
+    position: relative;
+    box-sizing: border-box;
+    // color: #3D4F9F;
+
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.SignIn {
+    padding: 0.5rem 2rem;
+    background-color: #ffffffbb;
+    &:hover,
+    &:active {
+        background: #F08827;
+    }
+}
+.SignUp {
+    padding: 0.5rem 2rem;
+    background-color: #000000;
+    color: white;
+    &:hover,
+    &:active {
+        background: #F08827;
+    }
+}
+.Logout {
+    padding: 0.5rem 2rem;
+    background-color: #FFFFFF;
+
+    &:hover,
+    &:active {
+        background: #F08827;
+    }
+}
+.Profile {
+    padding: 0.5rem 1rem;
+    border: 2px solid #D2E1FF;
+
+    &:hover,
+    &:active {
+        background: #D2E1FF;
+    }
+
+}
+
+
+
+
+
+@media all and (max-width: 1200px) {
+    .LeftBox {
+        margin-left: 2vw;
+    }
+    .RightBox {
+        margin-right: 2vw;
+    }
+} 
+@media all and (max-width: 1100px) {
+    // .RightBox {
+    //     display: none;
+    // }
+    .LogoText {
+        display: block;
+    }
+    .LeftBox {
+        margin-left: 5vw;
+    }
+} 
+@media all and (max-width: 380px) {
+    .LeftBox {
+        justify-content: center;
+    }
+}
+

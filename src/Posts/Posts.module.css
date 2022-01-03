@@ -1,0 +1,23 @@
+.PostList {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:center;
+    align-items:center;
+    width: 80%;
+    margin-top: 10px;
+    min-height: calc(80vh - 250px);
+}
+.PostsAndSort {
+    display: flex;
+    flex-flow: column;
+    justify-content:center;
+    align-items:center;
+}
+@media all and (max-width: 540px) {
+    .PostsAndSort {
+        width: 100%;
+    }
+    .PostList {
+        width: 90%;
+    }
+  }

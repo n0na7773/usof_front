@@ -1,0 +1,19 @@
+.Main {
+    width: 100%;
+    background-color: #F3C32A;
+    min-height: calc(100vh - 310px);
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: left;
+    flex: 1 0 auto;
+
+    .FeelText {
+        margin-top: 80px;
+        font-family: "Montserrat";
+        font-weight: 100;
+        font-size: 5.4em;
+        margin-left: 4vw;
+        color: #F3F3E9;
+    }
+}

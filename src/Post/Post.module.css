@@ -1,0 +1,90 @@
+.Post {
+    display: flex;
+    flex-flow: row;
+    width: 480px;
+    min-height: 180px;
+    margin: 10px;
+    padding: 10px;
+}
+.PostMark {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin-left: 5px;
+}
+.Rating {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.Rating:hover {
+    cursor: default;
+}
+.MarkButton:hover {
+    cursor: pointer;
+}
+
+.PostMain {
+    padding: 10px 20px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.PostTitle {
+    color: #1E81B0;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.PostTitle:hover {
+    color: #249cd4;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.CategoriesAndUser {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    margin-top: 5px;
+    padding: 0px;
+}
+.CategoriesAndUser span {
+    font-size: 15px;
+    display: inline;
+    margin-right: 5px;
+}
+.CategoriesAndUser span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.Link {
+    margin-right: 5px;
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+}
+.Link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.PersonIcon {
+    margin-left: 10px;
+}
+
+.PostContent {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.PostDate {
+    font-size: 12px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    opacity: .6;
+    cursor: default;
+}

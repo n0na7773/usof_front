@@ -1,0 +1,88 @@
+.Main {
+    width: 100%;
+    height: calc(100vh - 250px);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    flex: 1 0 auto;
+}
+
+.CreatePostBox {
+    width: 50%;
+    margin-top: 40px;
+    padding: 10px;
+}
+
+.FormPiece {
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 10px;
+}
+
+
+label {
+    margin-left: 10px;
+    font-size: 18px;
+}
+.Input {
+    height: 1.2rem;
+    padding: .375rem .75rem;
+    font-size: .9375rem;
+    font-weight: 400;
+    line-height: 1.6;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: solid 2px #1E81B0;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    margin: 10px;
+}
+
+.ContentInput { 
+    resize:vertical;
+    margin: 10px;
+    padding: .375rem .75rem;
+    font-size: .9375rem;
+    font-weight: 400;
+    line-height: 1.6;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: solid 2px #1E81B0;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+input:focus, .ContentInput:focus {
+    outline: none;
+}
+
+.ButtonsDiv {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+.Button {
+    margin: 10px 0px 10px 10px;
+    border: none;
+    background: #1E81B0;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.1s;
+}
+
+.Button:hover,
+.Button:active {
+    background: #249cd4;
+}
+
+.Button:focus {
+    outline: none;
+}
+.ButtonCancel {
+    background: #8a8a8a;
+}
+@media all and (max-width: 1000px) {
+    .CreatePostBox {
+        width: 80%;
+    }
+  }

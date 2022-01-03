@@ -1,0 +1,63 @@
+.SortAndCreateDiv {
+    width: 60%;
+    min-width: 300px;
+    margin-top: 30px;
+    font-size: 18px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.SortAndCreateDiv span {
+    margin-left: 10px;
+}
+
+.SortDiv {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+
+.SortList {
+    margin: 0px;
+    margin-left: 10px;
+    padding: 0px;
+}
+.SortList li {
+    display:inline;
+    margin-right: 10px;
+}
+.Active {
+    border-bottom: solid #1E81B0 2px;
+}
+
+.CreateButton {
+    border: none;
+    background: transparent;
+    border: solid 2px #1E81B0;
+    color: #1E81B0;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    transition: 0.1s;
+}
+
+.CreateButton:hover,
+.CreateButton:active {
+    background: #249cd4;
+    color: white;
+}
+
+.CreateButton:focus {
+    outline: none;
+}
+
+@media all and (max-width: 640px) {
+    .SortAndCreateDiv {
+        justify-content: center;
+    }
+    .CreateButton {
+        margin-top: 10px;
+    }
+  }

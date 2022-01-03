@@ -1,0 +1,41 @@
+.UserCard {
+    display: flex;
+    flex-flow: row wrap;
+    align-items:center;
+    margin: 10px 10px;
+    padding: 10px 20px;
+    min-width: 250px;
+}
+
+.Avatar {
+    vertical-align: middle;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.UserInfoDiv {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    margin-left: 30px;
+}
+.UserInfoDiv span {
+    margin-bottom: 10px;
+}
+.Login {
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: black;
+}
+.Login, .FullName, .Rating {
+    font-size: 16px;
+}
+.Login:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.AdminSpan {
+    font-size: 14px;
+    opacity: .6;
+}

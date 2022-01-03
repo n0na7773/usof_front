@@ -1,0 +1,114 @@
+.CreateComment {
+  display: flex;
+  flex-flow: row;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.CommentContent {
+    display: flex;
+  width: 100%;
+  margin-top: 10px;
+}
+.ContentInput {
+  resize: vertical;
+  padding: 0.275rem 0.55rem;
+  font-size: 1rem;
+  width: 100%;
+  font-weight: 400;
+  line-height: 1.6;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: solid 2px #1e81b0;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  font-family: -apple-system, BlinkMacSystemFont, "Poppins", "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+}
+.CommentMark {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  margin-left: 15px;
+}
+.Rating {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.Rating:hover {
+  cursor: default;
+}
+.MarkButton:hover {
+  cursor: pointer;
+}
+
+.CommentMain {
+  padding: 10px 20px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 10px;
+}
+
+.User {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  margin-top: 5px;
+  padding: 0px;
+}
+
+.Link {
+  margin-right: 5px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #1e81b0;
+  font-weight: 500;
+}
+.Link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.PersonAvatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.ButtonsDiv {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  max-width: 1000px;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: 10px;
+}
+.Button {
+    margin-left: 10px;
+    border: none;
+    background: #1E81B0;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.1s;
+}
+
+.Button:hover,
+.Button:active {
+    background: #249cd4;
+}
+
+.Button:focus {
+    outline: none;
+}
+.ButtonCancel {
+    background: #8a8a8a;
+}
+.ButtonCancel:hover {
+    background: #249cd4;
+}

@@ -1,0 +1,80 @@
+.SignIn {
+    width: 100%;
+    background-color: #F3C32A;
+    min-height: calc(100vh - 360px);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+form {
+    min-width: 340px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px gray;
+    background-color: #F3F3E9;
+    padding: 10px;
+}
+.Title {
+    font-family: "Copperplate";
+    font-size: 1.3em;
+    color: black;
+}
+.filedDiv {
+    display: flex;
+    flex-flow: row;
+    align-items:baseline;
+    margin: 0px 30px;
+}
+.SignIn form {
+    color: black;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+.SignIn input {
+    border: 1px solid black;
+    margin: 15px 0px;
+    padding: 7px 9px;
+    overflow: hidden;
+    background: transparent;
+    font-weight: 400;
+    font-size: 14px;
+}
+.SignIn input:focus{
+    outline: none;
+}
+.button {
+    width: 80%;
+    margin-top: 20px;
+    border: none;
+    background: #F08827;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    font-size: 1.15rem;
+    transition: 0.1s;
+}
+
+.button:hover,
+.button:active {
+    background: #DA174F;
+}
+
+.button:focus {
+    outline: none;
+}
+
+.button:disabled {
+    background: #797979;
+}
+
+.link {
+    margin-bottom: 10px;
+}
+
+.link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
