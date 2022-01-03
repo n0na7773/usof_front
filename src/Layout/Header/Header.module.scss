@@ -7,6 +7,15 @@
     justify-content: space-between;
     overflow-x:hidden;
     background-color: #F3C32A;
+    z-index: 120;
+}
+.PizzaImg {
+    position: absolute;
+    width: 230px;
+    height: 300px;
+    top: 0px;
+    right: 0px;
+    z-index: 0;
 }
 .LeftBox {
     margin-left: 4vw;

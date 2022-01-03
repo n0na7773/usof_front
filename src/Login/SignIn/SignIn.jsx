@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useReducer, useContext } from "react";
+import {useNavigate } from "react-router-dom";
 import css from "./SignIn.module.css";
 import AuthContext from "../../store/auth-context";
 import Loader from "react-loader-spinner";
@@ -24,6 +25,7 @@ const passwordReducer = (state, action) => {
 };
 
 const SignIn = (props) => {
+  const navigate = useNavigate();
   const authCtx = useContext(AuthContext);
 
   const [formIsValid, setFormIsValid] = useState(false);
@@ -86,7 +88,7 @@ const SignIn = (props) => {
             if (response.ok) {
                 console.log(data);
                 authCtx.login(data);
-                authCtx.switchLogInNow();
+                navigate('/profile');
             } else {
                 throw new Error(data.message);
             }

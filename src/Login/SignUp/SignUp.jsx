@@ -1,7 +1,10 @@
 import React, { useRef} from "react";
 import css from "./SignUp.module.css";
+import {useNavigate } from "react-router-dom";
+
 
 const SignUp = (props) => {
+  const navigate = useNavigate();
   const loginRef = useRef("");
   const full_nameRef = useRef("");
   const emailRef = useRef("");
@@ -35,12 +38,13 @@ const SignUp = (props) => {
       } else {
           alert("Sign Up succeed! Now log in");
           console.log(data);
+          navigate('/profile');
       }
     } catch (error) {
         alert(error.message);
     }
 
-    props.onCreateUser(user);
+    //props.onCreateUser(user);
   };
 
   return (

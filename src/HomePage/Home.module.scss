@@ -7,7 +7,23 @@
     align-items: center;
     justify-content: left;
     flex: 1 0 auto;
-
+    .VectorImg {
+        position: absolute;
+        width: 900px;
+        height: 600px;
+        top: 50vh;
+        left: 35vw;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+    }
+    .LinesImg {
+        position: absolute;
+        width: 400px;
+        height: 250px;
+        top: 72vh;
+        right: 0px;
+        z-index: 1;
+    }
     .FeelText {
         margin-top: 80px;
         font-family: "Montserrat";
@@ -15,5 +31,6 @@
         font-size: 5.4em;
         margin-left: 4vw;
         color: #F3F3E9;
+        z-index: 200;
     }
 }

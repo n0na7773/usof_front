@@ -4,6 +4,7 @@ import css from "./Header.module.scss";
 import Nav from "./Nav/Nav";
 import Burger from "./Burger/Burger";
 import AuthContext from "../../store/auth-context";
+import Pizza from "../../store/img/Circles.png"
 
 const Header = (props) => {
   const authCtx = useContext(AuthContext);
@@ -37,7 +38,8 @@ const Header = (props) => {
 // };
   return (
     <header className={css.Header}>
-      <div className={css.LeftBox}>
+      <img src={Pizza} className={css.PizzaImg}/>
+            <div className={css.LeftBox}>
         <Link to="/" className={css.Logo} /*onClick={burgerIsOpen ? burgerMenuHandler : null}*/>
           <span className={css.LogoText}>USOF</span>
         </Link>
